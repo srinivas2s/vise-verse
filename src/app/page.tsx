@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import ScrollyCanvas from "@/components/ScrollyCanvas";
 import TextOverlay from "@/components/TextOverlay";
@@ -9,12 +9,8 @@ import MainPortfolio from "@/components/MainPortfolio";
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
 
-  useEffect(() => {
-    // Transition after 9 seconds (covers the full text sequence)
-    const timer = setTimeout(() => {
-      setShowIntro(false);
-    }, 9000);
-    return () => clearTimeout(timer);
+  const handleVideoEnd = useCallback(() => {
+    setShowIntro(false);
   }, []);
 
   return (
@@ -28,7 +24,7 @@ export default function Home() {
             transition={{ duration: 1.5, ease: "easeInOut" }}
             className="fixed inset-0 z-50 h-screen w-full"
           >
-            <ScrollyCanvas />
+            <ScrollyCanvas onVideoEnd={handleVideoEnd} />
             <TextOverlay />
           </motion.div>
         ) : (
@@ -46,4 +42,3 @@ export default function Home() {
     </main>
   );
 }
-

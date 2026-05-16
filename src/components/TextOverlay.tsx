@@ -26,13 +26,13 @@ export default function TextOverlay() {
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-0 flex flex-col items-start justify-center pl-24"
           >
-            <h1 
+            <h1
               className="text-white text-8xl font-['Pricedown','Pricedown_Bl','pricedown'] tracking-normal leading-tight"
-              style={{ 
+              style={{
                 textShadow: "6px 6px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 15px 40px rgba(0,0,0,0.8)"
               }}
             >
-              Every city<br/> has problems.
+              Every city<br /> has problems.
             </h1>
           </motion.div>
         ) : (
@@ -43,9 +43,9 @@ export default function TextOverlay() {
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-0 flex flex-col items-center justify-center text-center px-10"
           >
-            <h1 
+            <h1
               className="text-white text-8xl font-['Pricedown','Pricedown_Bl','pricedown'] tracking-normal leading-tight"
-              style={{ 
+              style={{
                 textShadow: "8px 8px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 20px 50px rgba(0,0,0,1)"
               }}
             >

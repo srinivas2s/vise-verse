@@ -1,16 +1,18 @@
 "use client";
 
-import { motion } from "framer-motion";
+interface ScrollyCanvasProps {
+  onVideoEnd?: () => void;
+}
 
-export default function ScrollyCanvas() {
+export default function ScrollyCanvas({ onVideoEnd }: ScrollyCanvasProps) {
   return (
     <div className="absolute inset-0 bg-[#121212]">
       <video
         autoPlay
-        loop
         muted
         playsInline
         preload="auto"
+        onEnded={onVideoEnd}
         className="h-full w-full object-cover"
         style={{ 
           display: "block", 
@@ -27,4 +29,3 @@ export default function ScrollyCanvas() {
     </div>
   );
 }
-
