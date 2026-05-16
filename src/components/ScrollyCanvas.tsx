@@ -16,8 +16,7 @@ export default function ScrollyCanvas() {
           display: "block", 
           transform: "scale(1.1)",
           willChange: "transform",
-          filter: "brightness(1.05) contrast(1.2) saturate(1.1)",
-          imageRendering: "high-quality"
+          filter: "brightness(1.05) contrast(1.2) saturate(1.1)"
         }}
       >
         <source src="/background.mov" type="video/quicktime" />
