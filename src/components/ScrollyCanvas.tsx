@@ -23,8 +23,7 @@ export default function ScrollyCanvas({ onVideoEnd }: ScrollyCanvasProps) {
           filter: "brightness(1.02) contrast(1.1) saturate(1.05)"
         }}
       >
-        <source src="/background.mov" type="video/quicktime" />
-        <source src="/background.mov" type="video/mp4" />
+        <source src="/background.mp4" type="video/mp4" />
       </video>
     </div>
   );
