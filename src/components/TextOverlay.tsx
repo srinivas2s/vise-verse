@@ -49,7 +49,7 @@ export default function TextOverlay() {
                 textShadow: "8px 8px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 20px 50px rgba(0,0,0,1)"
               }}
             >
-              Today, you build<br/> the solution.
+              Today, you build the solution.
             </h1>
           </motion.div>
         )}
