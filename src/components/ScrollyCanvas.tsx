@@ -14,8 +14,8 @@ export default function ScrollyCanvas({ onVideoEnd }: ScrollyCanvasProps) {
         preload="auto"
         onEnded={onVideoEnd}
         className="h-full w-full object-cover"
-        style={{ 
-          display: "block", 
+        style={{
+          display: "block",
           filter: "contrast(1.05)"
         }}
       >
