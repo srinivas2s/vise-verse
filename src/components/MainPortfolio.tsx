@@ -18,7 +18,7 @@ export default function MainPortfolio() {
             transition={{ delay: 0.5, duration: 1 }}
             className="text-4xl md:text-7xl font-bold uppercase mb-4"
           >
-            Project Name
+            Vice Verse
           </motion.h1>
           <p className="text-white/40 uppercase tracking-[0.5em] text-sm">
             Digital Experiences & Cinematic Solutions
