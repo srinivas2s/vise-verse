@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -10,6 +10,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Vice Verse",
   description: "A high-end cinematic portfolio experience.",
+};
+
+export const viewport: Viewport = {
+  width: "1280",
+  initialScale: 1,
 };
 
 export default function RootLayout({
