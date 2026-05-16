@@ -26,6 +26,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" />
         <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/pricedown" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" />
       </head>
       <body className="antialiased">
         {children}
