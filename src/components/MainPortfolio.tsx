@@ -83,7 +83,7 @@ export default function MainPortfolio() {
             {/* Brush Effect (Pseudo) */}
             <div className="absolute -left-4 top-0 bottom-0 w-8 bg-white transform -skew-x-12" />
             <div className="absolute -right-4 top-0 bottom-0 w-8 bg-white transform skew-x-12" />
-          </motion.div>
+          </div>
         </motion.div>
       </motion.section>
 
