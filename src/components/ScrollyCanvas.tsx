@@ -16,11 +16,7 @@ export default function ScrollyCanvas({ onVideoEnd }: ScrollyCanvasProps) {
         className="h-full w-full object-cover"
         style={{ 
           display: "block", 
-          transform: "scale(1.05)",
-          willChange: "transform",
-          backfaceVisibility: "hidden",
-          WebkitBackfaceVisibility: "hidden",
-          filter: "brightness(1.02) contrast(1.1) saturate(1.05)"
+          filter: "contrast(1.05)"
         }}
       >
         <source src="/background.mp4" type="video/mp4" />
